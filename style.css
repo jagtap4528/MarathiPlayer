@@ -233,6 +233,7 @@ body {
 }
 
 footer {
+  position: relative;
   margin-top: auto;
   background: #10182f;
   width: 100%;
