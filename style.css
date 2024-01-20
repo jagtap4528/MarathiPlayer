@@ -11,8 +11,8 @@ body {
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     display: flex;
+    flex-direction: column;
 }
-
 @keyframes fadeInAnimation {
     0% {
         opacity: 0;
@@ -233,7 +233,8 @@ body {
 }
 
 footer {
-  position: fixed;
+  margin-top: auto;
+  position: relative;
   background: #10182f;
   width: 100%;
   bottom: 0;
