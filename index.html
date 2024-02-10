@@ -22,17 +22,52 @@
 </head>
 
 <body>
+
+<!--Nav Bar-->
+  <nav>
+
+    
+    <ul class="sidebar">
+      <li onclick=closesidebar()><a href="#" ><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+      <li><a href="index.html" >Home</a></li>
+      <li><a href="favorite.html" >Watchlist</a></li>
+      <li><a href="favorite.html" >Favorite</a></li>
+      <li><a href="#" >About Us</a></li>
+      <li><a href="#" >Contact Us</a></li>
+      <li><a href="#" >Help</a></li>
+    </ul>
+
+    
+    <ul>
+      <li><a href="#" >मराठी PLAYER</a></li>
+      <li class="hideonmobile"><a href="index.html" >Home</a></li>
+      <li class="hideonmobile"><a href="favorite.html" >Watchlist</a></li>
+      <li class="hideonmobile"><a href="favorite.html" >Favorite</a></li>
+      <li class="hideonmobile"><a href="#" >About Us</a></li>
+      <li class="hideonmobile"><a href="#" >Contact Us</a></li>
+      <li class="hideonmobile"><a href="#" >Help</a></li>
+      <li class="munu-button" onclick=showsidebar()><a href="#" ><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+    </ul>
+  </nav>
+
     <!--Header Bar-->
     <div class="header">
         <div class="header-container">
             <div>
                 <h1>Search for movies</h1>
             </div>
-            <div class="header-link">
+           <!-- <div class="header-link">
                 <span><a href="favorite.html">Watchlist</a></span>
-            </div>
+            </div>-->
         </div>
         <div class="search-box">
+<select>
+            <option value="All">All</option>
+            <option value="Movies">Movies</option>
+            <option value="TV Shows">TV Shows</option>
+            <option value="Anime">Anime</option>
+            <option value="Series">Series</option>
+          </select>
             <input type="text" placeholder="Type movie name here..." class="search-bar" id="Input">
             <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
         </div>
@@ -49,6 +84,7 @@
             <span>Start Exploring!</span>
         </div>
     </div>
+ <!--Footer Area-->
 <footer>
   <div class="content">
     <div class="top">
@@ -57,11 +93,11 @@
         <span class="logo_name">मराठी PLAYER</span>
       </div>
       <div class="media-icons">
-        <a href="https://www.facebook.com/profile.php?id=100092459169713&mibextid=9R9pXO"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://x.com/jagtap723?t=xsqLtFo9h1Dq-FzvzxSBjQ&s=09"><i class="fab fa-twitter"></i></a>
-        <a href="https://www.instagram.com/mharathi_player_96k?igsh=OGoydmxpMTMweHpp"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
         <a href="#"><i class="fab fa-linkedin-in"></i></a>
-        <a href="https://youtube.com/@PLAYER-07?si=UBoI5x3XrM7RCTpB"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
       </div>
     </div>
     <div class="link-boxes">
@@ -94,9 +130,13 @@
         <li><a href="#">Photoshop</a></li>
       </ul>-->
       <ul class="box input-box">
-        <li class="link_name">Subscribe</li>
-        <li><input type="text" placeholder="Enter your email"></li>
-        <li><input type="button" value="Subscribe"></li>
+        <li class="link_name">Feedback</li>
+        <li><input type="text" placeholder="Name"></li>
+        <li><input type="e-mail" placeholder="E-mail" ></li>
+        <li>
+            <textarea class="text-area"></textarea>
+        </li>
+        <li><input type="button" value="submit"></li>
       </ul>
     </div>
   </div>
@@ -110,6 +150,15 @@
     </div>
   </div>
 </footer>
+  <script>function showsidebar(){
+    const side = document.querySelector('.sidebar');
+    side.style.display='flex';
+  }
+
+  function closesidebar(){
+    const side = document.querySelector('.sidebar');
+    side.style.display='none';
+  }</script>
 
     <script src="./script.js"></script>
 </body>
