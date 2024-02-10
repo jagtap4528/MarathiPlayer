@@ -23,6 +23,74 @@ body {
     }
 }
 
+nav {
+  background-color: #fcfcfc;
+  box-shadow: 3px 3px 5px rgb(0, 0, 0.1);
+
+}
+nav ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+nav li {
+  height: 50px;
+}
+nav a {
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
+nav a:hover {
+  background-color: #f0f0f0;
+}
+nav li:first-child {
+  margin-right: auto;
+}
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.sidebar li {
+  width: 100%;
+}
+.sidebar a {
+  width: 100%;
+}
+.munu-button {
+display: none;
+}
+@media(max-width:800px){
+  .hideonmobile{
+    display: none;
+  }
+  .munu-button {
+    display: block;
+  }
+}
+
+@media(max-width:400px){
+  .sidebar{
+    width: 100%;
+  }
+}
+
 /* Header Bar */
 .header {
     height: 27vh;
@@ -77,6 +145,13 @@ body {
     box-shadow: 1px 2px #a1a1a1;
     display: flex;
     flex-direction: row;
+}
+
+.search-box select {
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background-color: white;
 }
 
 .search-box input {
@@ -233,9 +308,9 @@ body {
 }
 
 footer {
-  position: relative;
   margin-top: auto;
-  background: #10182f;
+  position: relative;
+  background: #3f4452;
   width: 100%;
   bottom: 0;
   left: 0;
@@ -373,6 +448,20 @@ footer .content .link-boxes .box {
   color: #afafb6;
   font-size: 16px;
 }
+
+.link-boxes .input-box textarea {
+  height: 40px;
+  width: calc(100% + 55px);
+  outline: none;
+  border: 2px solid #afafb6;
+  background: #eaeaea;
+  border-radius: 4px;
+  padding: 0 15px;
+  font-size: 15px;
+  color: #000000;
+  margin-top: 5px;
+}
+
 .link-boxes .input-box input[type="button"] {
   background: #fff;
   color: #3824d2;
