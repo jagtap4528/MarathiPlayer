@@ -549,6 +549,6 @@ footer .bottom-details .bottom_text {
     width: calc(100% / 2 - 10px);
   }
   footer .content .link-boxes .input-box {
-    width: 100%;
+    width: 60%;
   }
 }
