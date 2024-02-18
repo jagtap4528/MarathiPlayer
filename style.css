@@ -114,7 +114,7 @@ display: none;
 
 .header-container h1 {
     font-weight: bold;
-    font-size: 50px;
+    font-size: clamp(12px,4vw,50px);
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
 }
 
