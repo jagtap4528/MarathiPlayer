@@ -114,7 +114,7 @@ display: none;
 
 .header-container h1 {
     font-weight: bold;
-    font-size: clamp(12px,4vw,50px);
+    font-size: clamp(18px,4vw,50px);
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
 }
 
@@ -173,6 +173,12 @@ display: none;
     outline: none;
     border-radius: 4px;
     background-color: white;
+}
+
+@media(max-width:400px){
+  .search-box{
+    width: 80%;
+  }
 }
 
 /* Main Container */
