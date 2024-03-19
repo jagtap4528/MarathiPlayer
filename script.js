@@ -30,6 +30,10 @@ async function singleMovie() {
 
     <div class="movie-poster">
         <img src=${data.Poster} alt="Movie Poster">
+<a href="https://t.me/mharathiplayer">
+            <button class="dnbtn">Download</button>
+        </a>
+
     </div>
     <div class="movie-details">
         <div class="details-header">
