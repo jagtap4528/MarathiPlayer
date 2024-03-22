@@ -183,7 +183,7 @@ display: none;
 
 /* Main Container */
 .main {
-        background-image: url("background.jpg");
+        background-image: url("image.png");
     background-size: cover;
     background-color: #666;
     background-blend-mode: multiply;
