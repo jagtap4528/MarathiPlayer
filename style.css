@@ -183,7 +183,7 @@ display: none;
 
 /* Main Container */
 .main {
-        background-image: url("image.png");
+    background-image: url("image.png");
     background-size: cover;
     background-color: #666;
     background-blend-mode: multiply;
@@ -192,7 +192,7 @@ display: none;
 }
 
 /* Watermark Area / Start Exploring Section */
-.start-exploring {
+/*.start-exploring {
     color: #b1b1b1;
     width: 50%;
     margin: 0px auto;
@@ -204,7 +204,7 @@ display: none;
     font-size: 14px;
     font-weight: 600;
     padding-top: 5px;
-}
+}*/
 
 /* Movie Container */
 .movie-container {
