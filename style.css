@@ -183,7 +183,10 @@ display: none;
 
 /* Main Container */
 .main {
-    background-color: #e1e1e1;
+        background-image: url("background.jpg");
+    background-size: cover;
+    background-color: #666;
+    background-blend-mode: multiply;
     padding: 40px;
     min-height: 63vh;
 }
