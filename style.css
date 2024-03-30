@@ -26,7 +26,7 @@ body {
 nav {
   background-color: #fcfcfc;
   box-shadow: 3px 3px 5px rgb(0, 0, 0.1);
-
+  zindex: 9999;
 }
 nav ul {
   width: 100%;
