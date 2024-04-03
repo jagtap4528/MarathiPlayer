@@ -192,7 +192,7 @@ display: none;
 }
 
 /* Watermark Area / Start Exploring Section */
-/*.start-exploring {
+.start-exploring {
     color: #fffbfb;
     width: 50%;
     margin: 0px auto;
@@ -204,7 +204,7 @@ display: none;
     font-size: 14px;
     font-weight: 600;
     padding-top: 5px;
-}*/
+}
 
 /* Movie Container */
 .movie-container {
