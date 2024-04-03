@@ -231,11 +231,11 @@ font-size: clamp(18px,4vw,50px);
     width: 100%;
     height: auto;
     border-radius: 5px;
-    transaction: transform .4s;
+    transaction: transform .5s;
 }
 
 .movie-poster img:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .dnbtn {
