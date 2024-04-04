@@ -198,9 +198,11 @@ display: none;
     margin: 0px auto;
     text-align: center;
     padding-top: 100px;
-    font-size: clamp(18px,4vw,50px);
 }
 
+.start-exploring h1 {
+   font-size: clamp(10px,4vw,35px);
+}
 
 
 .start-exploring span {
