@@ -201,7 +201,7 @@ display: none;
 }
 
 .start-exploring h1 {
-   font-size: clamp(10px,4vw,35px);
+   font-size: clamp(10px,4vw,30px);
 }
 
 
